@@ -1,0 +1,27 @@
+{
+  "name": "Fiscal Printer Proxy",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "Send messages to Accent fiscal printers via native message host",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": [ "eventPage.js" ],
+    "persistent": false
+  },
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
+  "permissions": [
+    "nativeMessaging",
+    "storage"
+  ],
+  "externally_connectable": {
+    "matches": [
+      "*://localhost/*"
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "io.metiq.fiscalproxy",
+  "description": "Fiscal Printer Proxy - Native Message Host",
+  "path": "ERP.FiscalHost.exe",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://bcnckabacampcdchhdipopgkgcfggbai/"
+  ]
+}
